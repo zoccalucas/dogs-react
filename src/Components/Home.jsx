@@ -1,8 +1,9 @@
-import React from 'react'
-import Api from '../api/Api';
+import React from 'react';
 
 const Home = () => {
-  return (<div><Api /></div>)
-}
+  return (<div>
+    <h1>Home</h1>
+  </div>)
+};
 
-export default Home
+export default Home;
