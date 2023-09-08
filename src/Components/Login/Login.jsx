@@ -3,9 +3,13 @@ import LoginForm from '../Login/LoginForm';
 import LoginCreate from '../Login/LoginCreate';
 import LoginPasswordLost from '../Login/LoginPasswordLost';
 import LoginPasswordReset from '../Login/LoginPasswordReset';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { UserContext } from '../../UserContext';
 
 const Login = () => {
+  const { login } = React.useContext(UserContext);
+
+  if(login === true) return <Navigate to="/conta" />;
   return (
     <div>
       <Routes>
