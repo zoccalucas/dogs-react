@@ -75,7 +75,14 @@ export const UserStorage = ({children}) => {
   }, [userLogout]);
 
   return (
-    <UserContext.Provider value={{ userLogin, data, userLogout, error, loading, login }}>
+    <UserContext.Provider value={{ 
+      userLogin, 
+      data, 
+      userLogout, 
+      error, 
+      loading, 
+      login 
+      }}>
       {children}
     </UserContext.Provider>
   )
